@@ -33,7 +33,7 @@ const Dates = ({date, filterDates}) => {
 
 const styles = StyleSheet.create({
     dateContainer: {
-        backgroundColor: 'white',
+        backgroundColor: 'rgba(255,255,255, 0.8)',
         marginVertical: 5,
         marginHorizontal: 15,
         borderRadius: 5,

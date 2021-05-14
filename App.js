@@ -1,14 +1,9 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
 import React, { useState } from 'react';
-import { Text, StyleSheet, View, FlatList } from 'react-native';
+import { Text, StyleSheet, View, FlatList, ImageBackground } from 'react-native';
 import Dates from './components/Dates';
+import Form from './components/Form';
+
+const image = { uri: "https://wallpaperaccess.com/full/2001368.jpg" };
 
 const App = () => {
 
@@ -27,21 +22,25 @@ const App = () => {
   
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Administrador de Citas</Text>
+      <ImageBackground source={image} style={styles.image}>
+        
+        <Text style={styles.title}>Citas para Mascotas</Text>
 
-      { dates.length == 0 ? 
-      <View style={styles.infoText}>
-        <Text style={styles.infotitle}>No hay citas, empieza creando una.</Text>
-      </View>
-      : null}
-      
+        { dates.length == 0 ? 
+          <View style={styles.infoText}>
+            <Text style={styles.infotitle}>No hay citas, empieza creando una.</Text>
+          </View>
+        : null}
 
-      <FlatList 
-        data={dates}
-        renderItem={ ({item}) => <Dates date={item} filterDates={filterDates}/> }
-        keyExtractor={ date => date.id }
-      />
+        <Form />
+        
+        <FlatList 
+          data={dates}
+          renderItem={ ({item}) => <Dates date={item} filterDates={filterDates}/> }
+          keyExtractor={ date => date.id }
+        />
 
+      </ImageBackground>
     </View>
   );
 };
@@ -49,13 +48,18 @@ const App = () => {
 const styles = StyleSheet.create({
   
   container: {
-    backgroundColor: '#4B8DF5',
-    flex: 1
+    flex: 1,
+    flexDirection: "column"
+  },
+  image: {
+    flex: 1,
+    resizeMode: "cover",
+    justifyContent: "center"
   },
   title: {
     marginTop: 50,
     marginBottom: 10,
-    color: 'white',
+    color: 'black',
     textTransform: 'uppercase',
     fontSize: 20,
     fontWeight: 'bold',
