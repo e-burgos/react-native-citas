@@ -4,7 +4,6 @@ import { Text, StyleSheet, View, TouchableHighlight } from 'react-native'
 const Dates = ({date, filterDates}) => {
 
     const destroyDate = (id) => {
-        console.log('Eliminando...' + id)
         filterDates(id);
     }
 
@@ -17,6 +16,14 @@ const Dates = ({date, filterDates}) => {
             <View style={styles.dateLabel}>
                 <Text style={styles.label}>Propieratio:</Text>
                 <Text style={styles.text}>{date.owner}</Text>
+            </View>
+            <View style={styles.dateLabel}>
+                <Text style={styles.label}>Horario Programado:</Text>
+                <Text style={styles.text}>{date.time}</Text>
+            </View>
+            <View style={styles.dateLabel}>
+                <Text style={styles.label}>Fecha:</Text>
+                <Text style={styles.text}>{date.date}</Text>
             </View>
             <View style={styles.dateLabel}>
                 <Text style={styles.label}>Síntomas:</Text>
@@ -53,7 +60,8 @@ const styles = StyleSheet.create({
     },
     text: {
         fontSize: 18,
-        marginLeft: 4
+        marginLeft: 4,
+        marginRight: 80
     },
     button: {
         backgroundColor: 'red',
