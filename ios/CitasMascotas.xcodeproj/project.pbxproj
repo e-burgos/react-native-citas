@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* citasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* citasTests.m */; };
+		00E356F31AD99517003FC87E /* CitasMascotasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CitasMascotasTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		1FBD12A88F84881C0D9DC1FB /* libPods-citas.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BDB74B7249CA839985BEDE3 /* libPods-citas.a */; };
+		1FBD12A88F84881C0D9DC1FB /* libPods-CitasMascotas.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BDB74B7249CA839985BEDE3 /* libPods-CitasMascotas.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		E0C321A60865B9C44E71D631 /* libPods-citas-citasTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2A0CE790D213AF7AD7E8CFB /* libPods-citas-citasTests.a */; };
+		E0C321A60865B9C44E71D631 /* libPods-CitasMascotas-CitasMascotasTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2A0CE790D213AF7AD7E8CFB /* libPods-CitasMascotas-CitasMascotasTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,27 +22,27 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = citas;
+			remoteInfo = CitasMascotas;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* citasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = citasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* CitasMascotasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CitasMascotasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* citasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = citasTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* citas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = citas.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = citas/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = citas/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = citas/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = citas/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = citas/main.m; sourceTree = "<group>"; };
-		5BDB74B7249CA839985BEDE3 /* libPods-citas.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-citas.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = citas/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		898ED15C02EACA4EE5CFD3AB /* Pods-citas-citasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-citas-citasTests.release.xcconfig"; path = "Target Support Files/Pods-citas-citasTests/Pods-citas-citasTests.release.xcconfig"; sourceTree = "<group>"; };
-		CA15E3821BF40BB78887EC71 /* Pods-citas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-citas.release.xcconfig"; path = "Target Support Files/Pods-citas/Pods-citas.release.xcconfig"; sourceTree = "<group>"; };
-		CF0EA4824E402276B2C5FAAD /* Pods-citas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-citas.debug.xcconfig"; path = "Target Support Files/Pods-citas/Pods-citas.debug.xcconfig"; sourceTree = "<group>"; };
-		D2A0CE790D213AF7AD7E8CFB /* libPods-citas-citasTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-citas-citasTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC17875DB46B68B51082B9D1 /* Pods-citas-citasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-citas-citasTests.debug.xcconfig"; path = "Target Support Files/Pods-citas-citasTests/Pods-citas-citasTests.debug.xcconfig"; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* CitasMascotasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CitasMascotasTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* CitasMascotas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CitasMascotas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = CitasMascotas/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = CitasMascotas/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CitasMascotas/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CitasMascotas/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CitasMascotas/main.m; sourceTree = "<group>"; };
+		5BDB74B7249CA839985BEDE3 /* libPods-CitasMascotas.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CitasMascotas.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = CitasMascotas/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		898ED15C02EACA4EE5CFD3AB /* Pods-CitasMascotas-CitasMascotasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CitasMascotas-CitasMascotasTests.release.xcconfig"; path = "Target Support Files/Pods-CitasMascotas-CitasMascotasTests/Pods-CitasMascotas-CitasMascotasTests.release.xcconfig"; sourceTree = "<group>"; };
+		CA15E3821BF40BB78887EC71 /* Pods-CitasMascotas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CitasMascotas.release.xcconfig"; path = "Target Support Files/Pods-CitasMascotas/Pods-CitasMascotas.release.xcconfig"; sourceTree = "<group>"; };
+		CF0EA4824E402276B2C5FAAD /* Pods-CitasMascotas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CitasMascotas.debug.xcconfig"; path = "Target Support Files/Pods-CitasMascotas/Pods-CitasMascotas.debug.xcconfig"; sourceTree = "<group>"; };
+		D2A0CE790D213AF7AD7E8CFB /* libPods-CitasMascotas-CitasMascotasTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CitasMascotas-CitasMascotasTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC17875DB46B68B51082B9D1 /* Pods-CitasMascotas-CitasMascotasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CitasMascotas-CitasMascotasTests.debug.xcconfig"; path = "Target Support Files/Pods-CitasMascotas-CitasMascotasTests/Pods-CitasMascotas-CitasMascotasTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0C321A60865B9C44E71D631 /* libPods-citas-citasTests.a in Frameworks */,
+				E0C321A60865B9C44E71D631 /* libPods-CitasMascotas-CitasMascotasTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,20 +59,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FBD12A88F84881C0D9DC1FB /* libPods-citas.a in Frameworks */,
+				1FBD12A88F84881C0D9DC1FB /* libPods-CitasMascotas.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* citasTests */ = {
+		00E356EF1AD99517003FC87E /* CitasMascotasTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* citasTests.m */,
+				00E356F21AD99517003FC87E /* CitasMascotasTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = citasTests;
+			path = CitasMascotasTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -83,7 +83,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* citas */ = {
+		13B07FAE1A68108700A75B9A /* CitasMascotas */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -93,15 +93,15 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = citas;
+			name = CitasMascotas;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5BDB74B7249CA839985BEDE3 /* libPods-citas.a */,
-				D2A0CE790D213AF7AD7E8CFB /* libPods-citas-citasTests.a */,
+				5BDB74B7249CA839985BEDE3 /* libPods-CitasMascotas.a */,
+				D2A0CE790D213AF7AD7E8CFB /* libPods-CitasMascotas-CitasMascotasTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,10 +109,10 @@
 		4779BE56CDA5A2B8B645DE11 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CF0EA4824E402276B2C5FAAD /* Pods-citas.debug.xcconfig */,
-				CA15E3821BF40BB78887EC71 /* Pods-citas.release.xcconfig */,
-				EC17875DB46B68B51082B9D1 /* Pods-citas-citasTests.debug.xcconfig */,
-				898ED15C02EACA4EE5CFD3AB /* Pods-citas-citasTests.release.xcconfig */,
+				CF0EA4824E402276B2C5FAAD /* Pods-CitasMascotas.debug.xcconfig */,
+				CA15E3821BF40BB78887EC71 /* Pods-CitasMascotas.release.xcconfig */,
+				EC17875DB46B68B51082B9D1 /* Pods-CitasMascotas-CitasMascotasTests.debug.xcconfig */,
+				898ED15C02EACA4EE5CFD3AB /* Pods-CitasMascotas-CitasMascotasTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -128,9 +128,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* citas */,
+				13B07FAE1A68108700A75B9A /* CitasMascotas */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* citasTests */,
+				00E356EF1AD99517003FC87E /* CitasMascotasTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				4779BE56CDA5A2B8B645DE11 /* Pods */,
@@ -143,8 +143,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* citas.app */,
-				00E356EE1AD99517003FC87E /* citasTests.xctest */,
+				13B07F961A680F5B00A75B9A /* CitasMascotas.app */,
+				00E356EE1AD99517003FC87E /* CitasMascotasTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,9 +152,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* citasTests */ = {
+		00E356ED1AD99517003FC87E /* CitasMascotasTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "citasTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "CitasMascotasTests" */;
 			buildPhases = (
 				1F8642378E390249A5FA785F /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -168,14 +168,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = citasTests;
-			productName = citasTests;
-			productReference = 00E356EE1AD99517003FC87E /* citasTests.xctest */;
+			name = CitasMascotasTests;
+			productName = CitasMascotasTests;
+			productReference = 00E356EE1AD99517003FC87E /* CitasMascotasTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* citas */ = {
+		13B07F861A680F5B00A75B9A /* CitasMascotas */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "citas" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "CitasMascotas" */;
 			buildPhases = (
 				7CDC8C61E611FF2A95FC5A6D /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -190,9 +190,9 @@
 			);
 			dependencies = (
 			);
-			name = citas;
-			productName = citas;
-			productReference = 13B07F961A680F5B00A75B9A /* citas.app */;
+			name = CitasMascotas;
+			productName = CitasMascotas;
+			productReference = 13B07F961A680F5B00A75B9A /* CitasMascotas.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -212,7 +212,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "citas" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "CitasMascotas" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -225,8 +225,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* citas */,
-				00E356ED1AD99517003FC87E /* citasTests */,
+				13B07F861A680F5B00A75B9A /* CitasMascotas */,
+				00E356ED1AD99517003FC87E /* CitasMascotasTests */,
 			);
 		};
 /* End PBXProject section */
@@ -280,7 +280,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-citas-citasTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CitasMascotas-CitasMascotasTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -302,7 +302,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-citas-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CitasMascotas-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -315,15 +315,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-citas-citasTests/Pods-citas-citasTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CitasMascotas-CitasMascotasTests/Pods-CitasMascotas-CitasMascotasTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-citas-citasTests/Pods-citas-citasTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CitasMascotas-CitasMascotasTests/Pods-CitasMascotas-CitasMascotasTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-citas-citasTests/Pods-citas-citasTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CitasMascotas-CitasMascotasTests/Pods-CitasMascotas-CitasMascotasTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9DF13CB25AABBCC12E1AE16B /* [CP] Embed Pods Frameworks */ = {
@@ -332,15 +332,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-citas/Pods-citas-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CitasMascotas/Pods-CitasMascotas-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-citas/Pods-citas-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CitasMascotas/Pods-CitasMascotas-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-citas/Pods-citas-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CitasMascotas/Pods-CitasMascotas-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A0755120942267AF88094370 /* [CP] Copy Pods Resources */ = {
@@ -349,15 +349,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-citas-citasTests/Pods-citas-citasTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CitasMascotas-CitasMascotasTests/Pods-CitasMascotas-CitasMascotasTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-citas-citasTests/Pods-citas-citasTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CitasMascotas-CitasMascotasTests/Pods-CitasMascotas-CitasMascotasTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-citas-citasTests/Pods-citas-citasTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CitasMascotas-CitasMascotasTests/Pods-CitasMascotas-CitasMascotasTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E88B47F4F5C89CF8C526BF2E /* [CP] Copy Pods Resources */ = {
@@ -366,15 +366,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-citas/Pods-citas-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CitasMascotas/Pods-CitasMascotas-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-citas/Pods-citas-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CitasMascotas/Pods-CitasMascotas-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-citas/Pods-citas-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CitasMascotas/Pods-CitasMascotas-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -403,7 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* citasTests.m in Sources */,
+				00E356F31AD99517003FC87E /* CitasMascotasTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +421,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* citas */;
+			target = 13B07F861A680F5B00A75B9A /* CitasMascotas */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -429,14 +429,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC17875DB46B68B51082B9D1 /* Pods-citas-citasTests.debug.xcconfig */;
+			baseConfigurationReference = EC17875DB46B68B51082B9D1 /* Pods-CitasMascotas-CitasMascotasTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = citasTests/Info.plist;
+				INFOPLIST_FILE = CitasMascotasTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,17 +450,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/citas.app/citas";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CitasMascotas.app/CitasMascotas";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 898ED15C02EACA4EE5CFD3AB /* Pods-citas-citasTests.release.xcconfig */;
+			baseConfigurationReference = 898ED15C02EACA4EE5CFD3AB /* Pods-CitasMascotas-CitasMascotasTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = citasTests/Info.plist;
+				INFOPLIST_FILE = CitasMascotasTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -474,19 +474,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/citas.app/citas";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CitasMascotas.app/CitasMascotas";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF0EA4824E402276B2C5FAAD /* Pods-citas.debug.xcconfig */;
+			baseConfigurationReference = CF0EA4824E402276B2C5FAAD /* Pods-CitasMascotas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = citas/Info.plist;
+				INFOPLIST_FILE = CitasMascotas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -497,7 +497,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = citas;
+				PRODUCT_NAME = CitasMascotas;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -506,12 +506,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA15E3821BF40BB78887EC71 /* Pods-citas.release.xcconfig */;
+			baseConfigurationReference = CA15E3821BF40BB78887EC71 /* Pods-CitasMascotas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = citas/Info.plist;
+				INFOPLIST_FILE = CitasMascotas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -522,7 +522,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = citas;
+				PRODUCT_NAME = CitasMascotas;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -654,7 +654,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "citasTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "CitasMascotasTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -663,7 +663,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "citas" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "CitasMascotas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -672,7 +672,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "citas" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "CitasMascotas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
