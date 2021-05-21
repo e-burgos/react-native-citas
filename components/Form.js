@@ -3,7 +3,7 @@ import { Text, StyleSheet, View, TextInput, TouchableHighlight, Button, Alert, S
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 import shortid from 'shortid';
 
-const Form = ({dates, setDates, setAddBottonDate}) => {
+const Form = ({dates, setDates, setAddButtonDate, saveDataStorage}) => {
 
     // Inicializar campos del formulario
     const [pet, setPet] = useState('')
@@ -19,7 +19,7 @@ const Form = ({dates, setDates, setAddBottonDate}) => {
 
     // Ocultar formulario
     const hideDateForm = () => {
-        setAddBottonDate(true);
+        setAddButtonDate(true);
     };
 
     // Mostrar/ocultar fecha
@@ -74,9 +74,14 @@ const Form = ({dates, setDates, setAddBottonDate}) => {
         // Construimos la nueva cita
         const newDate = {pet, owner, phone, date, time, symptom};
         newDate.id = shortid.generate();
+
         // Actualizamos state de citas
         const allDates = [...dates, newDate];
         setDates(allDates);
+
+        // Actualizar Storage
+        saveDataStorage(JSON.stringify(allDates));
+
         // Ocualtamos formulario
         hideDateForm(false)
         // Reiniciar state de campos
@@ -89,86 +94,83 @@ const Form = ({dates, setDates, setAddBottonDate}) => {
     }
 
     return (
-       
-            
-                <View style={styles.formContainer}>
-                    <View>
-                        <Text style={styles.label}>Mascota:</Text>
-                        <TextInput 
-                            style={styles.input}
-                            onChangeText={ (text) => setPet(text)}
-                        />
-                    </View>
-                    <View>
-                        <Text style={styles.label}>Propieratio:</Text>
-                        <TextInput 
-                            style={styles.input}
-                            onChangeText={ (text) => setOwner(text)}
-                        />
-                    </View>
-                    <View>
-                        <Text style={styles.label}>Teléfono de Contacto:</Text>
-                        <TextInput 
-                            style={styles.input}
-                            onChangeText={ (text) => setPhone(text)}
-                            keyboardType='numeric'
-                        />
-                    </View>
-                    <View style={styles.pickerContainer}>
-                        <View style={styles.labelContainer}>
-                            <Text style={styles.label}>Fecha:</Text>
-                            <Text style={styles.pickerText}>{date}</Text>
-                        </View>
-                        <Button title="Seleccionar Fecha" onPress={showDatePicker} />
-                        <DateTimePickerModal
-                            isVisible={isDatePickerVisible}
-                            mode="date"
-                            onConfirm={handleConfirmDate}
-                            onCancel={hideDatePicker}
-                            locale='es_ES'
-                            headerTextIOS="Elige la fecha"
-                            cancelTextIOS="Cancelar"
-                            confirmTextIOS="Confirmar"
-                        />
-                    </View>
-                    <View style={styles.pickerContainer}>
-                        <View style={styles.labelContainer}>
-                            <Text style={styles.label}>Hora:</Text>
-                            <Text style={styles.pickerText}>{time}</Text>
-                        </View>
-                        <Button title="Seleccionar Hora" onPress={showTimePicker} />
-                        <DateTimePickerModal
-                            isVisible={isTimePickerVisible}
-                            mode="time"
-                            onConfirm={handleConfirmTime}
-                            onCancel={hideTimePicker}
-                            locale='es_ES'
-                            headerTextIOS="Elige una hora"
-                            cancelTextIOS="Cancelar"
-                            confirmTextIOS="Confirmar"
-                        />
-                    </View>
-                    <View>
-                        <Text style={styles.label}>Síntomas:</Text>
-                        <TextInput 
-                            multiline
-                            style={styles.input}
-                            onChangeText={ (text) => setSymptom(text)}
-                        />
-                    </View>
-                    <View>
-                        <TouchableHighlight onPress={() => addDate()} style={styles.button}>
-                            <Text style={styles.buttonText}>Agregar Cita</Text>
-                        </TouchableHighlight>
-                    </View>
-                    <View>
-                        <TouchableHighlight onPress={() => hideDateForm()} style={styles.cancelButton}>
-                            <Text style={styles.buttonText}>Cancelar</Text>
-                        </TouchableHighlight>
-                    </View>
+        <View style={styles.formContainer}>
+            <View>
+                <Text style={styles.label}>Mascota:</Text>
+                <TextInput 
+                    style={styles.input}
+                    onChangeText={ (text) => setPet(text)}
+                />
+            </View>
+            <View>
+                <Text style={styles.label}>Propietario:</Text>
+                <TextInput 
+                    style={styles.input}
+                    onChangeText={ (text) => setOwner(text)}
+                />
+            </View>
+            <View>
+                <Text style={styles.label}>Teléfono de Contacto:</Text>
+                <TextInput 
+                    style={styles.input}
+                    onChangeText={ (text) => setPhone(text)}
+                    keyboardType='numeric'
+                />
+            </View>
+            <View style={styles.pickerContainer}>
+                <View style={styles.labelContainer}>
+                    <Text style={styles.label}>Fecha:</Text>
+                    <Text style={styles.pickerText}>{date}</Text>
                 </View>
-     
-     );
+                <Button title="Seleccionar Fecha" onPress={showDatePicker} />
+                <DateTimePickerModal
+                    isVisible={isDatePickerVisible}
+                    mode="date"
+                    onConfirm={handleConfirmDate}
+                    onCancel={hideDatePicker}
+                    locale='es_ES'
+                    headerTextIOS="Elige la fecha"
+                    cancelTextIOS="Cancelar"
+                    confirmTextIOS="Confirmar"
+                />
+            </View>
+            <View style={styles.pickerContainer}>
+                <View style={styles.labelContainer}>
+                    <Text style={styles.label}>Hora:</Text>
+                    <Text style={styles.pickerText}>{time}</Text>
+                </View>
+                <Button title="Seleccionar Hora" onPress={showTimePicker} />
+                <DateTimePickerModal
+                    isVisible={isTimePickerVisible}
+                    mode="time"
+                    onConfirm={handleConfirmTime}
+                    onCancel={hideTimePicker}
+                    locale='es_ES'
+                    headerTextIOS="Elige una hora"
+                    cancelTextIOS="Cancelar"
+                    confirmTextIOS="Confirmar"
+                />
+            </View>
+            <View>
+                <Text style={styles.label}>Síntomas:</Text>
+                <TextInput 
+                    multiline
+                    style={styles.input}
+                    onChangeText={ (text) => setSymptom(text)}
+                />
+            </View>
+            <View>
+                <TouchableHighlight onPress={() => addDate()} style={styles.button}>
+                    <Text style={styles.buttonText}>Agregar Cita</Text>
+                </TouchableHighlight>
+            </View>
+            <View>
+                <TouchableHighlight onPress={() => hideDateForm()} style={styles.cancelButton}>
+                    <Text style={styles.buttonText}>Cancelar</Text>
+                </TouchableHighlight>
+            </View>
+        </View>
+    );
 }
 
 const styles = StyleSheet.create({

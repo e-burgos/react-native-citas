@@ -1,46 +1,72 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Text, StyleSheet, View, FlatList, ImageBackground, Platform, ScrollView, TouchableHighlight } from 'react-native';
 import Dates from './components/Dates';
 import Form from './components/Form';
+import AsyncStorage from '@react-native-community/async-storage';
+import Header from './components/Header';
 
-//const image = { uri: "https://wallpaperaccess.com/full/2001368.jpg" };
+const bg = { uri: "https://raw.githubusercontent.com/e-burgos/react-native-citas/master/img/backgroundApp.jpeg" };
 
 const App = () => {
 
   // Inicializar boton de agregar cita
-  const [addBottonDate, setAddBottonDate] = useState(true);
-
+  const [addButtonDate, setAddButtonDate] = useState(true);
   // Definir state de citas
-  const [dates, setDates] = useState([
-    { id: 1, pet: "Perro, Nuva", owner: "Esteban Burgos", date: "1 de mayo de 2021", time: "10:30", symptom: "No come el alimento recetado."},
-    { id: 2, pet: "Gata, Regi", owner: "Juan Lopez", date: "5 de mayo de 2021", time: "11:00", symptom: "No duerme por las noches, tiene exceso de energía."},
-    { id: 3, pet: "Perico, Maria", owner: "Pedro Fernandez", date: "10 de mayo de 2021", time: "12:00", symptom: "Ya no canta como antes, chequear edad y patrones de sueño."},
-  ]);
+  const [dates, setDates] = useState([]);
 
-  const filterDates = (id) => {
-    setDates( (dates) => {
-      return dates.filter( date => date.id !== id)
-    })
+  // Chequear datos en local storage al iniciar la app
+  useEffect(() => {
+    getDataStorage();
+  }, [])
+
+  // Obtene citas del storarage
+  const getDataStorage = async () => {
+    try {
+      const storageDates = await AsyncStorage.getItem('dates');
+      if(storageDates){
+        setDates(JSON.parse(storageDates));
+      };
+    } catch (error) {
+      console.log(error)
+    }
   }
+
+  // Eliminar u cita
+  const filterDates = (id) => {
+    const updateDates = dates.filter(date => date.id !== id);
+    setDates(updateDates);
+    saveDataStorage(JSON.stringify(updateDates));
+  }
+  
 
   // Ocultar formulario
   const showDateForm = () => {
-      setAddBottonDate(false);
+      setAddButtonDate(false);
   };
+
+  // Guardar/actualizar datos en storage
+  const saveDataStorage = async (jsonDates) => {
+      try {
+          // Almacenamos data en local storage
+          await AsyncStorage.setItem('dates', jsonDates);
+      } catch (error) {
+          console.log(error)
+      }
+  }
   
   return (
     <View style={styles.container}>
-      <ImageBackground source={require('./img/backgroundApp.jpeg')} style={styles.image}>
+      <ImageBackground source={bg} style={styles.image}>
         
-        <Text style={styles.title}>Citas para Mascotas</Text>
+        <Header />
         
-        { dates.length == 0 && addBottonDate ? 
+        { dates.length == 0 && addButtonDate ? 
             <View style={styles.infoText}>
                 <Text style={styles.infotitle}>No hay citas, empieza creando una.</Text>
             </View>
         : null }
 
-        {addBottonDate ?
+        {addButtonDate ?
           <View style={styles.formContainer}>
               <TouchableHighlight onPress={() => showDateForm()} style={styles.addDateButton}>
                   <Text style={styles.buttonText}>Crear Cita</Text>
@@ -52,19 +78,19 @@ const App = () => {
               style={styles.container}
               dates={dates}
               setDates={setDates}
-              setAddBottonDate={setAddBottonDate}
+              setAddButtonDate={setAddButtonDate}
+              saveDataStorage={saveDataStorage}
             />
           </ScrollView>
         }
-        { addBottonDate ? 
+        { addButtonDate ? 
           <FlatList 
             data={dates}
             renderItem={ ({item}) => <Dates date={item} filterDates={filterDates}/> }
-            keyExtractor={ date => date.id }
+            keyExtractor={date => date.id}
           />
         : null }
         
-
       </ImageBackground>
     </View>
   );

@@ -18,16 +18,13 @@ const Dates = ({date, filterDates}) => {
                 <Text style={styles.text}>{date.owner}</Text>
             </View>
             <View style={styles.dateLabel}>
-                <Text style={styles.label}>Horario Programado:</Text>
-                <Text style={styles.text}>{date.time}</Text>
-            </View>
-            <View style={styles.dateLabel}>
-                <Text style={styles.label}>Fecha:</Text>
-                <Text style={styles.text}>{date.date}</Text>
-            </View>
-            <View style={styles.dateLabel}>
                 <Text style={styles.label}>Síntomas:</Text>
-                <Text style={styles.text}>{date.symptom}</Text>
+                <Text style={styles.textArea}>{date.symptom}</Text>
+            </View>
+            <View style={styles.divider}></View>
+            <View style={styles.dateRow}>
+                <Text style={styles.timeText}>⏰ {date.time}hs</Text>
+                <Text style={styles.timeText}>📅 {date.date}</Text>
             </View>
             <View>
                 <TouchableHighlight onPress={() => destroyDate(date.id)} style={styles.button}>
@@ -45,7 +42,13 @@ const styles = StyleSheet.create({
         marginHorizontal: 15,
         borderRadius: 5,
         paddingHorizontal: 20,
-        paddingVertical: 20
+        paddingVertical: 20,
+        flex: 1,
+    },
+    dateRow: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+         marginTop: 10
     },
     dateLabel: {
         display: 'flex',
@@ -53,6 +56,12 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'flex-start',
         marginTop: 10
+    },
+    divider: {
+        marginTop: 10,
+        borderColor: 'lightgrey',
+        borderBottomWidth: 1,
+        borderStyle: 'solid'
     },
     label: {
         fontWeight: 'bold',
@@ -62,6 +71,15 @@ const styles = StyleSheet.create({
         fontSize: 18,
         marginLeft: 4,
         marginRight: 80
+    },
+    textArea: {
+        fontSize: 18,
+        marginLeft: 4,
+        marginRight: 80,
+        textAlign: 'justify'
+    },
+    timeText: {
+        fontSize: 18,
     },
     button: {
         backgroundColor: 'red',
